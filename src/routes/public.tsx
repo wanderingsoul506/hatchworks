@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 
-import { BeerRouter } from "../modules/beers";
+import { ProductRouter } from "../modules/products";
 import { AppMainLayout } from "../components";
 
 export const publicRoutes = [
@@ -9,12 +9,12 @@ export const publicRoutes = [
     element: <AppMainLayout />,
     children: [
       {
-        path: "beers/*",
-        element: <BeerRouter />,
+        path: "products/*",
+        element: <ProductRouter />,
       },
       {
         path: "",
-        element: <Navigate replace to="/beers" />,
+        element: <Navigate replace to="/products" />,
       },
     ],
   },

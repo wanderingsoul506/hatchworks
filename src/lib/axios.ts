@@ -1,5 +1,5 @@
 import axios from "axios";
 
-export const axiosPunk = axios.create({
-  baseURL: "https://api.punkapi.com/v2",
+export const axiosStore = axios.create({
+  baseURL: "https://fakestoreapi.com",
 });
