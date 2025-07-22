@@ -21,20 +21,13 @@ This is a fully responsive React application built with Vite that showcases a pr
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/wanderingsoul506/hatchworks.git
-cd hatchworks
-```
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Run the App
+### 2. Run the App
 
 ```bash
 npm run dev
