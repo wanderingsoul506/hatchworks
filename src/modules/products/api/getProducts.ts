@@ -1,16 +1,8 @@
 import { axiosStore } from "../../../lib";
-import type { Product, GetProductsPayload } from "../types";
+import type { Product } from "../types";
 
-const getProducts = async ({
-  page,
-  limit,
-}: GetProductsPayload): Promise<{ data: Product[] }> => {
-  return axiosStore.get(`/products`, {
-    params: {
-      page,
-      limit,
-    },
-  });
+const getProducts = async (): Promise<{ data: Product[] }> => {
+  return axiosStore.get(`/products`);
 };
 
 export default getProducts;

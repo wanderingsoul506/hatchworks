@@ -1,4 +1,4 @@
-import { renderStars } from "../../../../utils";
+import { renderStars } from "../../utils";
 import type { Product } from "../../types";
 import styles from "./ProductCard.module.css";
 

@@ -10,8 +10,3 @@ export interface Product {
     count: number;
   };
 }
-
-export interface GetProductsPayload {
-  page?: number;
-  limit?: number;
-}
