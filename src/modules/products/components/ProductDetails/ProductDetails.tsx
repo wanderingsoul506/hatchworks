@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import type { Product } from "../../types";
 import { renderStars } from "../../utils";
 import styles from "./ProductDetails.module.css";
@@ -9,6 +10,12 @@ interface ProductDetailProps {
 export default function ProductDetails({
   product: { title, image, price, rating, category, description },
 }: ProductDetailProps) {
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  };
+
   const stars = renderStars(rating.rate);
 
   return (
@@ -24,6 +31,9 @@ export default function ProductDetails({
           <span>({rating.count} reviews)</span>
         </div>
       </div>
+      <button className={styles.button} onClick={handleBackClick}>
+        Back
+      </button>
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function ProductDetailsPage() {
   const { data: ProductData } = useProduct(productId);
 
   if (!ProductData?.data) {
-    return <div>No Product Found</div>;
+    return null;
   }
 
   return <ProductDetails product={ProductData.data} />;
