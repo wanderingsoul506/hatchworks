@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { useProducts } from "../../hooks";
+import { ProductGrid } from "../../components";
 
 export default function ProductListPage() {
   const [page, setPage] = useState(1);
   const limit = 10;
 
-  const { data, isLoading, isError, isFetching } = useProducts({
+  const { data } = useProducts({
     limit,
     page,
   });
 
-  return <div>Product List</div>;
+  return <ProductGrid products={data?.data || []} />;
 }
