@@ -7,6 +7,14 @@ interface ProductGridProps {
 }
 
 export default function ProductGrid({ products }: ProductGridProps) {
+  if (products.length === 0) {
+    return (
+      <div className={styles.noItems}>
+        <p className={styles.noItemsText}>No products found.</p>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.grid}>
       {products.map((product) => (

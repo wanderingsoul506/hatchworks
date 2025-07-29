@@ -9,6 +9,10 @@
 }
 
 @media (max-width: 768px) {
+  .grid {
+    padding: 0;
+  }
+  
   .container {
     flex-direction: column;
   }

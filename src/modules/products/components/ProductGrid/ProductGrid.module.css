@@ -4,3 +4,13 @@
   gap: 1.5rem;
   padding: 2rem 0;
 }
+
+.noItems {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text)
+}
+
+.noItemsText {
+  font-size: 1.25rem;
+}
