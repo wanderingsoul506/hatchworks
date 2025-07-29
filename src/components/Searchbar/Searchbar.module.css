@@ -1,0 +1,15 @@
+.searchBar {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.searchBar input {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
