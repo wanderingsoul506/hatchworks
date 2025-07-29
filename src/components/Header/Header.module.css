@@ -29,3 +29,33 @@
 .nav a:hover {
   color: var(--color-primary);
 }
+
+.headerButtonContainer {
+  display: flex;
+  direction: row;
+  gap: 0.5rem;
+}
+
+.cartButtonWrapper {
+  position: relative;
+}
+
+.cartBadge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0 6px;
+  border-radius: 9999px;
+  font-weight: 700;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -41,6 +41,32 @@
   gap: 0.5rem;
 }
 
-.button {
-  width: 100px;
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quantity {
+  font-weight: 600;
+  font-size: 1rem;
+  min-width: 80px;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+  .buttonContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .controls {
+    justify-content: center;
+  }
 }

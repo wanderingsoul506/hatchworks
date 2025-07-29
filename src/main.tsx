@@ -5,12 +5,14 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 
 import "./styles/global.css";
-import { ThemeProvider } from "./context";
+import { CartProvider, ThemeProvider } from "./context";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ThemeProvider>
-      <App />
+      <CartProvider>
+        <App />
+      </CartProvider>
     </ThemeProvider>
   </React.StrictMode>
 );
