@@ -3,8 +3,44 @@
   --color-bg: #f9f9f9;
   --color-text: #333;
   --color-border: #ddd;
+  --color-surface: #fff;
+  --color-hover: #e2e2e2;
+  --color-active: #d0e6ff;
+
+  --color-input-bg: #ffffff;
+  --color-input-text: #333333;
+  --color-input-border: #ccc;
+  --color-input-placeholder: #999999;
+  --color-input-focus: #1a73e8;
+
+  --color-header-bg: #ffffff;
+  --color-header-text: #333333;
+  --color-header-border: #ddd;
+  --color-header-shadow: rgba(0, 0, 0, 0.05);
+  
   --spacing: 1rem;
   --radius: 8px;
+}
+
+[data-theme="dark"] {
+  --color-primary: #669df6;
+  --color-bg: #121212;
+  --color-text: #e0e0e0;
+  --color-border: #2c2c2c;
+  --color-surface: #1e1e1e;
+  --color-hover: #2a2a2a;
+  --color-active: #3a3a3a;
+
+  --color-input-bg: #1e1e1e;
+  --color-input-text: #e0e0e0;
+  --color-input-border: #333333;
+  --color-input-placeholder: #888888;
+  --color-input-focus: #8ab4f8;
+
+  --color-header-bg: #1f1f1f;
+  --color-header-text: #e0e0e0;
+  --color-header-border: #333333;
+  --color-header-shadow: rgba(0, 0, 0, 0.7);
 }
 
 * {
@@ -37,4 +73,24 @@ button {
 
 button:hover {
   background: #1663c7;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.icon-button:hover {
+  background-color: var(--color-hover);
+}
+
+.icon-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px transparent;
 }

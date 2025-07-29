@@ -29,7 +29,6 @@
 .price {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #222;
 }
 
 .description {
@@ -38,7 +37,6 @@
 
 .rating {
   font-size: 0.95rem;
-  color: #555;
   display: flex;
   gap: 0.5rem;
 }
